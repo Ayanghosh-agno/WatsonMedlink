@@ -1,0 +1,132 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Doctor Availability Service",
+    "description": "Checks a doctor's availability and provides confirmation or alternative suggestions.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://agno-dev-ed.develop.my.site.com/services/apexrest"
+    }
+  ],
+  "paths": {
+    "/doctorAvailability": {
+      "get": {
+        "summary": "Check Doctor Availability",
+        "operationId": "checkDoctorAvailability",
+        "parameters": [
+          {
+            "name": "location",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patientName",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patientEmail",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "patientPhone",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "doctorName",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          {
+            "name": "time",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "format": "time"
+            }
+          },{
+            "name": "confirmation",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },{
+            "name": "appointmentId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+          
+        ],
+        "responses": {
+          "200": {
+            "description": "Doctor availability or alternative suggestions",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean",
+                      "description": "Indicates if the doctor is available"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Message detailing availability and options"
+                    },
+                    "options": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Confirmation options if doctor is available (Yes/No)"
+                    },
+                    "suggestions": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Alternative date and time suggestions if doctor is unavailable"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Appointment API",
+    "version": "1.0.0",
+    "description": "This API cancel an appointment for a given Appointment ID."
+  },
+  "servers": [
+    {
+      "url": "https://agno-dev-ed.develop.my.site.com/WatsonMedLink/services/apexrest"
+    }
+  ],
+  "paths": {
+    "/appointmentcancel": {
+      "get": {
+        "summary": "Cancel an appointment",
+        "description": "Cancel the appointment for the provided Appointment ID.",
+        "operationId": "cancelAppointment",
+        "parameters": [
+          {
+            "name": "appointmentId",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Appointment cancelled successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Appointment cancelled !"
+                    },
+                    "success": {
+                      "type": "boolean",
+                      "example": true
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request, invalid AppointmentId",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Invalid AppointmentId"
+                    },
+                    "success": {
+                      "type": "boolean",
+                      "example": false
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

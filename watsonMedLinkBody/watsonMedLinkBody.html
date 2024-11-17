@@ -1,0 +1,124 @@
+<template>
+    <div class="website-container">
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h2>Your Health, Our Priority</h2>
+                <p>Connecting you with top-notch healthcare services anytime, anywhere.</p>
+                <div class="appointment-check">
+                    <input type="text" placeholder="Check Appointment Status">
+                    <button>Check</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+            <div class="services-cards">
+                <div class="card">
+                    <img src={bookApp} alt="Book Appointment">
+                    <h3>Book an Appointment</h3>
+                    <p>Schedule a consultation with our experienced doctors.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <img src={reschedule} alt="Reschedule your apoointments">
+                    <h3>Reschedule your apoointment</h3>
+                    <p>Reschedule your appointment with your convinience.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <img src={caneclApp} alt="Cancel your appointments">
+                    <h3>Cancel your appointments</h3>
+                    <p>Cancel appointment withiout any hassel</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <img src={liveAgent} alt="Live Agent Support">
+                    <h3>Live Agent Support</h3>
+                    <p>Our agents are here to help you in case of any emergencies.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <img src={emailAlert} alt="Email alterts">
+                    <h3>Email Alerts</h3>
+                    <p>We cover you with different types of email alerts.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <img src={airemedy} alt="AI remedy">
+                    <h3>AI remedy</h3>
+                    <p>Our WatsonX AI can help you with some quick guidance.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <h3>How can I schedule an appointment using WatsonMedLink?</h3>
+                    <p>Try it now:<br>
+                        Step 1: Open the WatsonMedLink app or the WhatsApp bot.<br>
+                        Step 2: Type "Book an appointment" and follow the prompts to select a doctor, date, and time.<br>
+                        Step 3: Once you’ve completed the steps, WatsonMedLink will confirm your appointment, or suggest available slots if your selected time is not available.<br>
+                        What to expect:<br>
+
+                        WatsonMedLink will respond with a confirmation message or suggest new available times.<br>
+                        You'll receive a confirmation email on the email ID provided or message for your appointment with appointment ID.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I reschedule or cancel my appointment?</h3>
+                    <p>Try it now:<br>
+
+                    Step 1: Open WatsonMedLink and type "Reschedule my appointment" or "Cancel my appointment."<br>
+                    Step 2: Follow the instructions to either pick a new time or confirm cancellation.<br>
+                    Step 3: The system will either confirm your rescheduling or cancel the appointment and notify you accordingly.<br>
+                    What to expect:<br>
+
+                    You’ll get a response confirming the rescheduled time or a cancellation notice.<br>
+                    The updated appointment or cancellation will be reflected in salesforce record database.<br>
+                    You will receive an update in your email id provided. <br>
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does WatsonMedLink offer health advice or remedies?</h3>
+                    <p>Try it now: <br>
+
+                    Step 1: Ask WatsonMedLink a medical question, such as "What should I do if I have a headache?" <br>
+                    Step 2: WatsonMedLink will provide a response with advice or suggested remedies. <br>
+                    What to expect: <br>
+
+                    You’ll receive personalized advice, including over-the-counter treatments or recommendations to consult a doctor. <br>
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I access live agent support during an emergency?</h3>
+                    <p>Try it now: <br>
+                        During any symptoms or medical concerns that may seem life-threatening, such as:<br>
+                        Severe chest pain<br>
+                        Difficulty breathing<br>
+                        Heavy bleeding<br>
+                        Sudden weakness or confusion<br>
+                        WatsonMedLink will immediately advise you to “Connect With an Agent” to ensure you receive real-time support.<br>
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button>Submit</button>
+                </div>
+                <div class="map">
+                    <lightning-map map-markers={mapMarkers}> </lightning-map>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>

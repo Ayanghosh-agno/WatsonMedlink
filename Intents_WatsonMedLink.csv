@@ -1,0 +1,64 @@
+Can I schedule a consultation?,book_appointment
+I need to set up a checkup appointment.,book_appointment
+How can I book a doctor’s visit?,book_appointment
+Is it possible to book a visit with Dr. Smith?,book_appointment
+I want to make an appointment for tomorrow.,book_appointment
+Can you help me schedule a doctor?,book_appointment
+I need to set up a checkup appointment,book_appointment
+Please book me an appointment,book_appointment
+I want to schedule an appointment,book_appointment
+I need to see a doctor.,book_appointment
+I’d like to book an appointment with a doctor.,book_appointment
+Is it possible to cancel my appointment?,cancel_appointment
+I want to cancel my appointment with Dr. Patel.,cancel_appointment
+How do I cancel an appointment?,cancel_appointment
+I no longer need my appointment. Cancel it.,cancel_appointment
+Please remove my appointment from your system.,cancel_appointment
+Can I cancel my upcoming visit?,cancel_appointment
+I’d like to cancel my doctor’s visit,cancel_appointment
+I need to cancel my appointment.,cancel_appointment
+Can you remove my appointment?,cancel_appointment
+Please cancel my booking,cancel_appointment
+Is my appointment confirmed for next week?,check_appointment_status
+Do I have any upcoming appointments?,check_appointment_status
+Can you tell me when my next appointment is?,check_appointment_status
+Can you check my appointment details?,check_appointment_status
+What’s my next appointment date?,check_appointment_status
+When is my next appointment?,check_appointment_status
+What’s the status of my appointment with Dr. Kim?,check_appointment_status
+I want to confirm my appointment time.,check_appointment_status
+Can you show me my booked appointments?,check_appointment_status
+I need to check my upcoming visit with the doctor,check_appointment_status
+What time slots are open for a checkup?,check_availability
+Can you check if there’s an appointment available tomorrow?,check_availability
+Are there any openings tomorrow?,check_availability
+Show me available times for this Thursday.,check_availability
+Is Dr. Smith available this week?,check_availability
+Can you tell me when I can book an appointment?,check_availability
+Is there availability for a doctor on Friday?,check_availability
+I’d like to know available slots with Dr. Brown,check_availability
+What times are available for Dr. Lee?,check_availability
+Please check the next available appointment time,check_availability
+Talk with an agent,Connect_with_agent
+Connect with an agent,Connect_with_agent
+Connect me with an agent,Connect_with_agent
+Should I see a doctor if I have a cold?,get_medical_assistance
+What should I do if I have a fever?,get_medical_assistance
+Can you guide me on what to do about this headache?,get_medical_assistance
+Can you provide medical assistance?,get_medical_assistance
+Can you help with a medical question?,get_medical_assistance
+Can you tell me about this symptom?,get_medical_assistance
+I need some health advice.,get_medical_assistance
+I need some help with my health concerns.,get_medical_assistance
+Can you assist with a medical question?,get_medical_assistance
+What do you suggest for a sore throat?,get_medical_assistance
+I’d like to push my appointment to next week.,reschedule_appointment
+Is it possible to change my appointment?,reschedule_appointment
+want to reschedule my doctor’s appointment.,reschedule_appointment
+I’d like to move my appointment to another day,reschedule_appointment
+I’d like to change the date of my visit.,reschedule_appointment
+Please help me reschedule my booking,reschedule_appointment
+Can I change my appointment time?,reschedule_appointment
+Can I reschedule my visit?,reschedule_appointment
+I need to reschedule my appointment.,reschedule_appointment
+Can we reschedule my appointment for another day?,reschedule_appointment

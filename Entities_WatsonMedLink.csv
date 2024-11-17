@@ -1,0 +1,42 @@
+appointment_type,Lab test,lab work,Medical test,Urine test,blood test,Laboratory test
+appointment_type,Consultation,counselling,discussion,Medical consult,Consult with Doctor,Consult
+appointment_type,General checkup,annual physical,general health check,regular visit,Routine checkup
+appointment_type,Physical exam,Full Physical,Health exam,Physical check,Medical exam,Physical
+appointment_type,Follow-up visit,aftercare,return visit,revisit,follow up check,follow up
+confirmation,No,Noops,Not at all
+confirmation,Confirm,Affirm,Verify,Approve,Acknowledge
+confirmation,Cancel,Void,withdraw,abort,stop
+confirmation,Yes,yes,ya,hmmm
+doctors,Dr. Patel,Dr P,Patel,Dr Patel,Doctor Patel
+doctors,Dr. Lee,Dr le,Dr Lii,Lii,Lee,Dr Lee,Doctor Lee
+doctors,Dr. Brown,Dr B,Brown,Dr Brown,Doctor Brown
+doctors,Dr. Garcia,Dr G,Garcia,Dr Garcia,Doctor Garcia
+doctors,Dr. Kim,Dr K,Kim,Dr Kim,Doctor Kim
+doctors,Dr. Smith,Dr S,Smith,Dr Smith,Doctor Smith
+farewell,Good bye,bye,see you later,catch you later
+farewell,Thank you and good bye,Thanks and bye,appreciate it,thanks a lot
+greetings,Hi,hello,hula,hey,good morning,good evening,hey there
+insurance_provider,Anthem
+insurance_provider,Delta Dental
+insurance_provider,Medicare
+insurance_provider,Medicaid
+insurance_provider,Kaiser Permanente
+insurance_provider,Humana
+insurance_provider,Cigna
+insurance_provider,UnitedHealthcare
+insurance_provider,Aetna
+insurance_provider,Blue Cross
+location,Downtown Clinic,metro clinic,Urban clinic,Main city clinic,City center clinic
+location,Main clinic,principal location,central clinic,head clinic,main office,Primary clinic
+location,Health center,healthcare facility,wellness center,heal clinic,Medical center,Clinic
+location,Rivierside center,riverside office,riverfront location,river clinic,waterway center,riverside clinic
+symptoms,Cold
+symptoms,Fever
+symptoms,Dizziness
+symptoms,Rash
+symptoms,Pain
+symptoms,Fatigue
+symptoms,Sore throat
+symptoms,Headache
+symptoms,Nausea
+symptoms,Cough

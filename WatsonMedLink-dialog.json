@@ -1,0 +1,1034 @@
+{
+  "intents": [
+    {
+      "intent": "book_appointment",
+      "examples": [
+        {
+          "text": "Can I schedule a consultation?"
+        },
+        {
+          "text": "Can you help me schedule a doctor?"
+        },
+        {
+          "text": "How can I book a doctor’s visit?"
+        },
+        {
+          "text": "I’d like to book an appointment with a doctor."
+        },
+        {
+          "text": "I need to see a doctor."
+        },
+        {
+          "text": "I need to set up a checkup appointment"
+        },
+        {
+          "text": "I need to set up a checkup appointment."
+        },
+        {
+          "text": "Is it possible to book a visit with Dr. Smith?"
+        },
+        {
+          "text": "I want to make an appointment for tomorrow."
+        },
+        {
+          "text": "I want to schedule an appointment"
+        },
+        {
+          "text": "Please book me an appointment"
+        }
+      ]
+    },
+    {
+      "intent": "cancel_appointment",
+      "examples": [
+        {
+          "text": "Can I cancel my upcoming visit?"
+        },
+        {
+          "text": "Can you remove my appointment?"
+        },
+        {
+          "text": "How do I cancel an appointment?"
+        },
+        {
+          "text": "I’d like to cancel my doctor’s visit"
+        },
+        {
+          "text": "I need to cancel my appointment."
+        },
+        {
+          "text": "I no longer need my appointment. Cancel it."
+        },
+        {
+          "text": "Is it possible to cancel my appointment?"
+        },
+        {
+          "text": "I want to cancel my appointment with Dr. Patel."
+        },
+        {
+          "text": "Please cancel my booking"
+        },
+        {
+          "text": "Please remove my appointment from your system."
+        }
+      ]
+    },
+    {
+      "intent": "check_appointment_status",
+      "examples": [
+        {
+          "text": "Can you check my appointment details?"
+        },
+        {
+          "text": "Can you show me my booked appointments?"
+        },
+        {
+          "text": "Can you tell me when my next appointment is?"
+        },
+        {
+          "text": "Do I have any upcoming appointments?"
+        },
+        {
+          "text": "I need to check my upcoming visit with the doctor"
+        },
+        {
+          "text": "Is my appointment confirmed for next week?"
+        },
+        {
+          "text": "I want to confirm my appointment time."
+        },
+        {
+          "text": "What’s my next appointment date?"
+        },
+        {
+          "text": "What’s the status of my appointment with Dr. Kim?"
+        },
+        {
+          "text": "When is my next appointment?"
+        }
+      ]
+    },
+    {
+      "intent": "check_availability",
+      "examples": [
+        {
+          "text": "Are there any openings tomorrow?"
+        },
+        {
+          "text": "Can you check if there’s an appointment available tomorrow?"
+        },
+        {
+          "text": "Can you tell me when I can book an appointment?"
+        },
+        {
+          "text": "I’d like to know available slots with Dr. Brown"
+        },
+        {
+          "text": "Is Dr. Smith available this week?"
+        },
+        {
+          "text": "Is there availability for a doctor on Friday?"
+        },
+        {
+          "text": "Please check the next available appointment time"
+        },
+        {
+          "text": "Show me available times for this Thursday."
+        },
+        {
+          "text": "What times are available for Dr. Lee?"
+        },
+        {
+          "text": "What time slots are open for a checkup?"
+        }
+      ]
+    },
+    {
+      "intent": "Connect_with_agent",
+      "examples": [
+        {
+          "text": "Connect me with an agent"
+        },
+        {
+          "text": "Connect with an agent"
+        },
+        {
+          "text": "Talk with an agent"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "get_medical_assistance",
+      "examples": [
+        {
+          "text": "Can you assist with a medical question?"
+        },
+        {
+          "text": "Can you guide me on what to do about this headache?"
+        },
+        {
+          "text": "Can you help with a medical question?"
+        },
+        {
+          "text": "Can you provide medical assistance?"
+        },
+        {
+          "text": "Can you tell me about this symptom?"
+        },
+        {
+          "text": "I need some health advice."
+        },
+        {
+          "text": "I need some help with my health concerns."
+        },
+        {
+          "text": "Should I see a doctor if I have a cold?"
+        },
+        {
+          "text": "What do you suggest for a sore throat?"
+        },
+        {
+          "text": "What should I do if I have a fever?"
+        }
+      ]
+    },
+    {
+      "intent": "reschedule_appointment",
+      "examples": [
+        {
+          "text": "Can I change my appointment time?"
+        },
+        {
+          "text": "Can I reschedule my visit?"
+        },
+        {
+          "text": "Can we reschedule my appointment for another day?"
+        },
+        {
+          "text": "I’d like to change the date of my visit."
+        },
+        {
+          "text": "I’d like to move my appointment to another day"
+        },
+        {
+          "text": "I’d like to push my appointment to next week."
+        },
+        {
+          "text": "I need to reschedule my appointment."
+        },
+        {
+          "text": "Is it possible to change my appointment?"
+        },
+        {
+          "text": "Please help me reschedule my booking"
+        },
+        {
+          "text": "want to reschedule my doctor’s appointment."
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "appointment_type",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Consultation",
+          "synonyms": [
+            "Consult",
+            "Consult with Doctor",
+            "counselling",
+            "discussion",
+            "Medical consult"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Follow-up visit",
+          "synonyms": [
+            "aftercare",
+            "follow up",
+            "follow up check",
+            "return visit",
+            "revisit"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "General checkup",
+          "synonyms": [
+            "annual physical",
+            "general health check",
+            "regular visit",
+            "Routine checkup"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Lab test",
+          "synonyms": [
+            "blood test",
+            "Laboratory test",
+            "lab work",
+            "Medical test",
+            "Urine test"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Physical exam",
+          "synonyms": [
+            "Full Physical",
+            "Health exam",
+            "Medical exam",
+            "Physical",
+            "Physical check"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "confirmation",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cancel",
+          "synonyms": [
+            "abort",
+            "stop",
+            "Void",
+            "withdraw"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Confirm",
+          "synonyms": [
+            "Acknowledge",
+            "Affirm",
+            "Approve",
+            "Verify"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "No",
+          "synonyms": [
+            "Noops",
+            "Not at all"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Yes",
+          "synonyms": [
+            "hmmm",
+            "ya",
+            "yes"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "doctors",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Dr. Brown",
+          "synonyms": [
+            "Brown",
+            "Doctor Brown",
+            "Dr B",
+            "Dr Brown"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Garcia",
+          "synonyms": [
+            "Doctor Garcia",
+            "Dr G",
+            "Dr Garcia",
+            "Garcia"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Kim",
+          "synonyms": [
+            "Doctor Kim",
+            "Dr K",
+            "Dr Kim",
+            "Kim"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Lee",
+          "synonyms": [
+            "Doctor Lee",
+            "Dr le",
+            "Dr Lee",
+            "Dr Lii",
+            "Lee",
+            "Lii"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Patel",
+          "synonyms": [
+            "Doctor Patel",
+            "Dr P",
+            "Dr Patel",
+            "Patel"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dr. Smith",
+          "synonyms": [
+            "Doctor Smith",
+            "Dr S",
+            "Dr Smith",
+            "Smith"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "farewell",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good bye",
+          "synonyms": [
+            "bye",
+            "catch you later",
+            "see you later"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Thank you and good bye",
+          "synonyms": [
+            "appreciate it",
+            "thanks a lot",
+            "Thanks and bye"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Hi",
+          "synonyms": [
+            "good evening",
+            "good morning",
+            "hello",
+            "hey",
+            "hey there",
+            "hula"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "insurance_provider",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Aetna",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Anthem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Blue Cross",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cigna",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Delta Dental",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Humana",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kaiser Permanente",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Medicaid",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Medicare",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UnitedHealthcare",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Downtown Clinic",
+          "synonyms": [
+            "City center clinic",
+            "Main city clinic",
+            "metro clinic",
+            "Urban clinic"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Health center",
+          "synonyms": [
+            "Clinic",
+            "heal clinic",
+            "healthcare facility",
+            "Medical center",
+            "wellness center"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Main clinic",
+          "synonyms": [
+            "central clinic",
+            "head clinic",
+            "main office",
+            "Primary clinic",
+            "principal location"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Rivierside center",
+          "synonyms": [
+            "river clinic",
+            "riverfront location",
+            "riverside clinic",
+            "riverside office",
+            "waterway center"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "symptoms",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Cold",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cough",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dizziness",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fatigue",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fever",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Headache",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Nausea",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pain",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sore throat",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-time",
+      "values": []
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1731761095236",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1731761095236",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1731825903520"
+      },
+      "conditions": "#reschedule_appointment",
+      "dialog_node": "node_10_1731761547189",
+      "previous_sibling": "node_4_1731761534255"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Book an appointment",
+                "value": {
+                  "input": {
+                    "text": "Book an appointment"
+                  }
+                }
+              },
+              {
+                "label": "Reschedule an appointment",
+                "value": {
+                  "input": {
+                    "text": "Reschedule an appointment"
+                  }
+                }
+              },
+              {
+                "label": "Cancel an appointment",
+                "value": {
+                  "input": {
+                    "text": "Cancel an appointment"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "dialog_node": "node_10_1731772028172",
+      "previous_sibling": "node_1_1731772561251"
+    },
+    {
+      "type": "standard",
+      "actions": [
+        {
+          "name": "action_9982",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "#get_medical_assistance",
+      "dialog_node": "node_10_1731834131946",
+      "previous_sibling": "node_1_1731846892165"
+    },
+    {
+      "type": "standard",
+      "title": "copy 1",
+      "output": {},
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#book_appointment",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1731772561251",
+      "previous_sibling": "node_2_1731825903520"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "response_type": "connect_to_agent",
+            "transfer_info": {
+              "target": {
+                "salesforce": {
+                  "button_id": "573J1000000oLkP"
+                }
+              }
+            },
+            "agent_available": {
+              "message": "Request an agent, and I'll notify you when they're ready. Your wait time may vary based on availability."
+            },
+            "agent_unavailable": {
+              "message": "Sorry, no agents are available right now."
+            }
+          }
+        ]
+      },
+      "conditions": "#Connect_with_agent",
+      "dialog_node": "node_1_1731846892165",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "output": {},
+      "parent": "node_1_1731772561251",
+      "actions": [
+        {
+          "name": "action_47788",
+          "type": "assistant_action",
+          "parameters": {
+            "Appn_Date": "@sys-date",
+            "Appn_Time": "@sys-time",
+            "Doctor_name": "@doctors",
+            "hos_location": "@location",
+            "insurance_name": "@insurance_provider"
+          },
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1731772561253"
+    },
+    {
+      "type": "standard",
+      "actions": [
+        {
+          "name": "action_6792",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "#reschedule_appointment",
+      "dialog_node": "node_2_1731825903520",
+      "previous_sibling": "node_4_1731829969746"
+    },
+    {
+      "type": "standard",
+      "actions": [
+        {
+          "name": "action_35261",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "#cancel_appointment",
+      "dialog_node": "node_3_1731830979359",
+      "previous_sibling": "node_10_1731834131946"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1731761095236",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1731830979359"
+      },
+      "conditions": "#cancel_appointment",
+      "dialog_node": "node_4_1731761534255",
+      "previous_sibling": "node_7_1731761452872"
+    },
+    {
+      "type": "standard",
+      "actions": [
+        {
+          "name": "action_6792-2",
+          "type": "assistant_action",
+          "parameters": {},
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "#check_appointment_status",
+      "dialog_node": "node_4_1731829969746",
+      "previous_sibling": "node_3_1731830979359"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1731761095236",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1731829969746"
+      },
+      "conditions": "#check_appointment_status",
+      "dialog_node": "node_5_1731761604740",
+      "previous_sibling": "node_10_1731761547189"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi there ! Hope you are doing fine. Let me know what your query is or you can choose an option from below. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Book an appointment",
+                "value": {
+                  "input": {
+                    "text": "book an appointment"
+                  }
+                }
+              },
+              {
+                "label": "reschedule an appointment",
+                "value": {
+                  "input": {
+                    "text": "reschedule an appointment"
+                  }
+                }
+              },
+              {
+                "label": "check appointment status",
+                "value": {
+                  "input": {
+                    "text": "check appointment status"
+                  }
+                }
+              },
+              {
+                "label": "cancel an appointment",
+                "value": {
+                  "input": {
+                    "text": "cancel an appointment"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "@greetings",
+      "dialog_node": "node_6_1731761095236",
+      "previous_sibling": "node_10_1731772028172"
+    },
+    {
+      "type": "standard",
+      "parent": "node_6_1731761095236",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#book_appointment",
+      "dialog_node": "node_7_1731761452872"
+    },
+    {
+      "type": "standard",
+      "parent": "node_7_1731761452872",
+      "actions": [
+        {
+          "name": "action_47788",
+          "type": "assistant_action",
+          "parameters": {
+            "Appn_Date": "@sys-date",
+            "Appn_Time": "@sys-time",
+            "Doctor_name": "@doctors",
+            "hos_location": "@location",
+            "insurance_name": "@insurance_provider"
+          },
+          "result_variable": "action_result_1",
+          "assistant_action_settings": {
+            "use_global_variables": true,
+            "lookup_action_by_title": false
+          }
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1731772028172"
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1731764226150"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello I am WatsonMedLink. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "learning_opt_out": false,
+  "language": "en",
+  "description": "created for assistant 4febcfe8-1984-4137-96c1-e186d0f5e57d",
+  "name": "WatsonMedLink-dialog"
+}
